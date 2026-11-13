@@ -1,0 +1,64 @@
+{
+  "files": {
+    "ball_v1": {
+      "bytes": 4865837,
+      "file": "ball_v1.pt",
+      "run": "20261103T233807Z_04df4c3_ball_v1",
+      "selected_on": [
+        "DFL-J03WQQ",
+        "DFL-J03WR9"
+      ],
+      "sha256": "8ae6af8a6fd65ae7f01b8a55de3c3ee841e9f15109b1abbb34a5c2fc716df1fa",
+      "step": 30000,
+      "tag": "weights-v1",
+      "trained_on": [
+        "DFL-J03WMX",
+        "DFL-J03WN1",
+        "DFL-J03WOH",
+        "DFL-J03WOY",
+        "DFL-J03WPY"
+      ]
+    },
+    "possession_v1": {
+      "bytes": 4906797,
+      "file": "possession_v1.pt",
+      "run": "20261104T023957Z_0d3ce00_possession_v1",
+      "selected_on": [
+        "DFL-J03WQQ",
+        "DFL-J03WR9"
+      ],
+      "sha256": "77158cbe0e0e7c07be691c65778363bbb14bd91eff41e49cc66ea825ae73bb34",
+      "step": 16000,
+      "tag": "weights-v1",
+      "trained_on": [
+        "DFL-J03WMX",
+        "DFL-J03WN1",
+        "DFL-J03WOH",
+        "DFL-J03WOY",
+        "DFL-J03WPY"
+      ]
+    },
+    "possession_v3": {
+      "bytes": 4910061,
+      "file": "possession_v3.pt",
+      "run": "20261109T201423Z_728f443_possession_v3",
+      "selected_on": [
+        "DFL-J03WQQ",
+        "DFL-J03WR9",
+        "SC-1874553"
+      ],
+      "sha256": "6c7f1dc8140ee112b6bc4e5551e6d74e960a9cd6f795a812b878796c5baf87a8",
+      "step": 20000,
+      "tag": "weights-v2",
+      "trained_on": [
+        "DFL-J03WMX",
+        "DFL-J03WN1",
+        "DFL-J03WOH",
+        "DFL-J03WOY",
+        "DFL-J03WPY"
+      ]
+    }
+  },
+  "repo": "dasanplaen-cmyk/dog-lovers-hackathon-phase1",
+  "tag": "weights-v2"
+}

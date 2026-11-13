@@ -1,0 +1,79 @@
+{
+  "config": {
+    "align_labels": true,
+    "ball_weights": "release:ball_v1",
+    "batch_size": 32,
+    "bf16": true,
+    "change_weight": 1.0,
+    "ckpt_every": 500,
+    "d_model": 128,
+    "dropout": 0.1,
+    "eval_every": 2000,
+    "gap_max": 500,
+    "gap_min": 1,
+    "gap_mode": "renewal",
+    "gap_profile": "baseline/gap_profile.json",
+    "grad_clip": 1.0,
+    "heads": 4,
+    "hide_dead_margin": 12,
+    "jitter_m": 0.1,
+    "log_every": 200,
+    "lr": 0.0003,
+    "max_players": 32,
+    "miss_hi": 0.6,
+    "miss_lo": 0.2,
+    "name": "possession_v3",
+    "num_workers": 8,
+    "p_blind": 0.15,
+    "p_drop_frame": 0.02,
+    "p_drop_track": 0.05,
+    "p_flip_y": 0.5,
+    "p_hide_dead": 0.0,
+    "p_renewal": 0.8,
+    "p_swap": 0.5,
+    "real_val_games": [
+      "SC-1874553"
+    ],
+    "seed": 20261110,
+    "set_layers": 2,
+    "steps": 20000,
+    "time_layers": 4,
+    "train_games": [
+      "DFL-J03WMX",
+      "DFL-J03WN1",
+      "DFL-J03WOH",
+      "DFL-J03WOY",
+      "DFL-J03WPY"
+    ],
+    "val_games": [
+      "DFL-J03WQQ",
+      "DFL-J03WR9"
+    ],
+    "viterbi_penalty": 8.0,
+    "warmup_steps": 1000,
+    "weight_decay": 0.01,
+    "window": 200
+  },
+  "git": {
+    "branch": "claude/clever-allen-zkhyjm",
+    "commit": "728f443eeb4cba561528978da2e6abc8984bb614",
+    "dirty": false
+  },
+  "host": "spark-work",
+  "id": "20261109T201423Z_728f443_possession_v3",
+  "machine": "aarch64",
+  "name": "possession_v3",
+  "seed": 20261110,
+  "started_utc": "2026-11-09T20:14:23+00:00",
+  "train_games": [
+    "DFL-J03WMX",
+    "DFL-J03WN1",
+    "DFL-J03WOH",
+    "DFL-J03WOY",
+    "DFL-J03WPY"
+  ],
+  "val_games": [
+    "DFL-J03WQQ",
+    "DFL-J03WR9"
+  ]
+}

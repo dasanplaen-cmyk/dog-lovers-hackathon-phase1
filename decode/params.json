@@ -1,0 +1,19 @@
+{
+  "control_min_s": 2.0,
+  "model": "possession_v3",
+  "note": "tuned on external games only (organisers' clarification, 2026-11-03)",
+  "params": {
+    "change_weight": 0.0,
+    "min_dead_s": 4.0,
+    "min_spell_s": 1.0,
+    "pen_from_dead": 28.0,
+    "pen_team": 28.0,
+    "pen_to_dead": 20.0
+  },
+  "spell_f1_mean": 0.7004,
+  "tuned_on": [
+    "DFL-J03WQQ",
+    "DFL-J03WR9",
+    "SC-1874553"
+  ]
+}

@@ -1,0 +1,7 @@
+# Training and inference extras on the GX10, on top of requirements.txt (numpy, pandas).
+# torch is installed separately by bootstrap.sh from the CUDA wheel index; the exact resolved
+# versions of everything end up in requirements-gx10.lock.
+kloppy==3.18.0
+pyyaml
+scipy
+tqdm

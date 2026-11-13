@@ -1,0 +1,8 @@
+{
+  "best_step": 16000,
+  "finished_utc": "2026-11-04T03:43:33+00:00",
+  "val_macroF1_argmax": 0.9206372814413215,
+  "val_macroF1_viterbi": 0.9214572057473465,
+  "val_spellF1_argmax": 0.5890784245160059,
+  "val_spellF1_viterbi": 0.6518978150923871
+}

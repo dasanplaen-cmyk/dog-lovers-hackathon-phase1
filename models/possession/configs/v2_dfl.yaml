@@ -1,0 +1,52 @@
+# Possession model v2_dfl: v1 + ball model estimate as input, DFL only (no external real-gap
+# data), synthetic gaps plus 30 % of dead-ball runs hidden, selected on DFL validation only. Nothing
+name: possession_v2_dfl
+seed: 20261106
+
+train_games: [DFL-J03WMX, DFL-J03WN1, DFL-J03WOH, DFL-J03WOY, DFL-J03WPY]
+val_games: [DFL-J03WQQ, DFL-J03WR9]          # selection, ball hidden by the gap simulation
+real_val_games: []
+ball_weights: release:ball_v1      # frozen ball model from inference/weights_manifest.json (sha256 checked)
+
+# model
+window: 200            # frames (8 s)
+max_players: 32
+d_model: 128
+heads: 4
+set_layers: 2
+time_layers: 4
+dropout: 0.1
+
+# hidden ball: v1's synthetic gaps plus some whole dead-ball runs
+gap_mode: synthetic
+gap_min: 1
+gap_max: 500
+miss_lo: 0.2
+miss_hi: 0.6
+p_blind: 0.15
+p_hide_dead: 0.3       # share of dead-ball runs whose ball is also hidden
+hide_dead_margin: 12   # frames hidden around such a run
+
+# augmentation
+p_flip_y: 0.5
+p_swap: 0.5            # home <-> away, with x mirrored and H <-> A swapped
+jitter_m: 0.1
+p_drop_track: 0.05
+p_drop_frame: 0.02
+
+# optimisation
+batch_size: 32
+steps: 20000
+warmup_steps: 1000
+lr: 3.0e-4
+weight_decay: 0.01
+grad_clip: 1.0
+change_weight: 1.0
+bf16: true
+num_workers: 8
+ckpt_every: 500
+
+# logging and evaluation
+log_every: 200
+eval_every: 2000
+viterbi_penalty: 8.0   # fixed yardstick decoder for checkpoint choice only

@@ -1,0 +1,15 @@
+{
+  "best_step": 12000,
+  "finished_utc": "2026-11-09T19:14:44+00:00",
+  "realval_labels_aligned": 1.0,
+  "realval_macroF1_argmax": 0.8454863985447988,
+  "realval_macroF1_viterbi": 0.8494391660243522,
+  "realval_spellF1_argmax": 0.42457142857142854,
+  "realval_spellF1_viterbi": 0.5148717948717949,
+  "select": 0.6359247096198681,
+  "val_labels_aligned": 1.0,
+  "val_macroF1_argmax": 0.9273950866809548,
+  "val_macroF1_viterbi": 0.9289690304378325,
+  "val_spellF1_argmax": 0.596577840112202,
+  "val_spellF1_viterbi": 0.7569776243679414
+}

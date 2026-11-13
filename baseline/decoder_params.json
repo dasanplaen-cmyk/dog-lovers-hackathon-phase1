@@ -1,0 +1,19 @@
+{
+  "control_min_s": 2.0,
+  "model": null,
+  "note": "tuned on external games only (organisers' clarification, 2026-11-03)",
+  "params": {
+    "change_weight": 0.0,
+    "min_dead_s": 0.0,
+    "min_spell_s": 2.0,
+    "pen_from_dead": 40.0,
+    "pen_team": 28.0,
+    "pen_to_dead": 160.0
+  },
+  "spell_f1_mean": 0.4711,
+  "tuned_on": [
+    "DFL-J03WQQ",
+    "DFL-J03WR9",
+    "SC-1874553"
+  ]
+}

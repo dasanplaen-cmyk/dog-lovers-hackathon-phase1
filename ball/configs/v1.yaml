@@ -1,0 +1,49 @@
+# Ball from players, v1. Training and selection on external games only.
+name: ball_v1
+seed: 20261104
+
+train_games: [DFL-J03WMX, DFL-J03WN1, DFL-J03WOH, DFL-J03WOY, DFL-J03WPY]
+val_games: [DFL-J03WQQ, DFL-J03WR9]          # checkpoint selection
+test_games: [METRICA-3]                        # record of the published run only: Metrica was dropped (no
+                                               # licence) and that test report is withdrawn
+
+# model
+window: 125            # frames (5 s at 25 fps)
+max_players: 32        # tracked objects kept per frame
+d_model: 128
+heads: 4
+set_layers: 2
+time_layers: 4
+dropout: 0.1
+
+# simulated ball gaps (frames)
+gap_min: 1
+gap_max: 250
+miss_lo: 0.2
+miss_hi: 0.6
+p_blind: 0.1
+
+# augmentation
+p_flip: 0.5
+p_swap: 0.5
+jitter_m: 0.1
+p_drop_track: 0.05
+p_drop_frame: 0.02
+
+# optimisation
+batch_size: 64
+steps: 30000
+warmup_steps: 1000
+lr: 3.0e-4
+weight_decay: 0.01
+grad_clip: 1.0
+visible_weight: 0.1    # loss weight on frames where the ball was given as input
+bf16: true
+num_workers: 8         # processes building batches ahead of the GPU (0 = in the main process)
+ckpt_every: 500        # last.pt for --resume
+
+# logging and evaluation
+log_every: 200
+eval_every: 2000
+eval_max_windows: 4000
+conf_radius_m: 2.0     # ball_conf = P(error < this radius) under the model

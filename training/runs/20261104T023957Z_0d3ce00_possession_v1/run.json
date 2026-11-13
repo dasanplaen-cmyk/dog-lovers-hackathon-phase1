@@ -1,0 +1,71 @@
+{
+  "config": {
+    "batch_size": 32,
+    "bf16": true,
+    "change_weight": 1.0,
+    "ckpt_every": 500,
+    "d_model": 128,
+    "dropout": 0.1,
+    "eval_every": 2000,
+    "gap_max": 500,
+    "gap_min": 1,
+    "grad_clip": 1.0,
+    "heads": 4,
+    "hide_dead_margin": 12,
+    "jitter_m": 0.1,
+    "log_every": 200,
+    "lr": 0.0003,
+    "max_players": 32,
+    "miss_hi": 0.6,
+    "miss_lo": 0.2,
+    "name": "possession_v1",
+    "num_workers": 8,
+    "p_blind": 0.15,
+    "p_drop_frame": 0.02,
+    "p_drop_track": 0.05,
+    "p_flip_y": 0.5,
+    "p_hide_dead": 0.7,
+    "p_swap": 0.5,
+    "seed": 20261105,
+    "set_layers": 2,
+    "steps": 20000,
+    "time_layers": 4,
+    "train_games": [
+      "DFL-J03WMX",
+      "DFL-J03WN1",
+      "DFL-J03WOH",
+      "DFL-J03WOY",
+      "DFL-J03WPY"
+    ],
+    "val_games": [
+      "DFL-J03WQQ",
+      "DFL-J03WR9"
+    ],
+    "viterbi_penalty": 8.0,
+    "warmup_steps": 1000,
+    "weight_decay": 0.01,
+    "window": 200
+  },
+  "git": {
+    "branch": "claude/clever-allen-zkhyjm",
+    "commit": "0d3ce006d8287cca4f32b4d8c68e9b4ad6454911",
+    "dirty": false
+  },
+  "host": "spark-work",
+  "id": "20261104T023957Z_0d3ce00_possession_v1",
+  "machine": "aarch64",
+  "name": "possession_v1",
+  "seed": 20261105,
+  "started_utc": "2026-11-04T02:39:57+00:00",
+  "train_games": [
+    "DFL-J03WMX",
+    "DFL-J03WN1",
+    "DFL-J03WOH",
+    "DFL-J03WOY",
+    "DFL-J03WPY"
+  ],
+  "val_games": [
+    "DFL-J03WQQ",
+    "DFL-J03WR9"
+  ]
+}

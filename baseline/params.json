@@ -1,0 +1,17 @@
+{
+  "dead_accuracy_on_fit_games": 0.8945,
+  "fitted_on": [
+    "DFL-J03WQQ",
+    "DFL-J03WR9",
+    "SC-1874553"
+  ],
+  "note": "fitted on external games only (organisers' clarification, 2026-11-03)",
+  "weights": {
+    "ball_missing": 1.4515,
+    "ball_off_pitch": 3.9932,
+    "ball_still": 5.2299,
+    "bias": 2.1021,
+    "log_gap_s": 0.0418,
+    "player_speed": -2.3943
+  }
+}
